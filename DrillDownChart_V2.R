@@ -4,8 +4,6 @@ library(purrr)
 library(highcharter)
 library(scales)
 library(stringr)
-#Source: https://stackoverflow.com/questions/55795935/r-highcharter-multi-level-drilldown-with-multiple-series
-#setwd("C:/Users/Samarth.Kaluskar/Documents/DrillDown_Chart")
 
 Test <- data.frame(Group = c("A", "A", "A", "A", "A", "A", "A", "A", 
                              "B", "B", "B", "B", "B", "B", "B", "B"),
@@ -21,7 +19,6 @@ Test <- data.frame(Group = c("A", "A", "A", "A", "A", "A", "A", "A",
                    Value = c(5293, 78225, 33235, 56022, 13056, 6160, 44067, 75529, 
                              95679, 98172, 27159, 77475, 37838, 25897, 88400, 28484))
 
-#Test <- 
 
 TestSum <- Test %>%
   group_by(Group) %>%
